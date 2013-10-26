@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  VexScorer
+
+  Created by Nick McGuire on 2013-10-22.
+  Copyright (c) 2013 RND Consulting. All rights reserved.
+*/
+
+//Tab Bar Titles
+"SCORING_TAB_TITLE" = "Scoring";
+"MATCHES_TAB_TITLE" = "Matches";
+
+
+//Matches View Controller
+"MATCHES_TITLE" = "Matches";
+"MATCHES_ADD_TITLE" = "Add Match";
+"MATCHES_CLEAR_TITLE" = "Clear All";
+"MATCHES_DELETE_TITLE" = "Delete Selected";

@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE639D8F18197FD0000AD7CC /* VSMatchCell.m */; };
+		DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */; };
+		DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */; };
+		DE77944E1816C39F00AA85C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE77944D1816C39F00AA85C2 /* Localizable.strings */; };
+		DEAF430E1810610100C95B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF430D1810610100C95B01 /* Foundation.framework */; };
+		DEAF43101810610100C95B01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF430F1810610100C95B01 /* CoreGraphics.framework */; };
+		DEAF43121810610100C95B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF43111810610100C95B01 /* UIKit.framework */; };
+		DEAF43181810610100C95B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEAF43161810610100C95B01 /* InfoPlist.strings */; };
+		DEAF431A1810610100C95B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF43191810610100C95B01 /* main.m */; };
+		DEAF431E1810610100C95B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF431D1810610100C95B01 /* AppDelegate.m */; };
+		DEAF43291810610100C95B01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAF43281810610100C95B01 /* Images.xcassets */; };
+		DEAF43301810610100C95B01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF432F1810610100C95B01 /* XCTest.framework */; };
+		DEAF43311810610100C95B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF430D1810610100C95B01 /* Foundation.framework */; };
+		DEAF43321810610100C95B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF43111810610100C95B01 /* UIKit.framework */; };
+		DEAF433A1810610100C95B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEAF43381810610100C95B01 /* InfoPlist.strings */; };
+		DEAF433C1810610100C95B01 /* VexScorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF433B1810610100C95B01 /* VexScorerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEAF43331810610100C95B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEAF43021810610100C95B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEAF43091810610100C95B01;
+			remoteInfo = VexScorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE639D8E18197FD0000AD7CC /* VSMatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchCell.h; path = Classes/VSMatchCell.h; sourceTree = "<group>"; };
+		DE639D8F18197FD0000AD7CC /* VSMatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchCell.m; path = Classes/VSMatchCell.m; sourceTree = "<group>"; };
+		DE7794401816BF2E00AA85C2 /* VSScoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSScoringViewController.h; path = Classes/VSScoringViewController.h; sourceTree = "<group>"; };
+		DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSScoringViewController.m; path = Classes/VSScoringViewController.m; sourceTree = "<group>"; };
+		DE7794431816C08E00AA85C2 /* VSMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchesViewController.h; path = Classes/VSMatchesViewController.h; sourceTree = "<group>"; };
+		DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchesViewController.m; path = Classes/VSMatchesViewController.m; sourceTree = "<group>"; };
+		DE77944D1816C39F00AA85C2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DEAF430A1810610100C95B01 /* VexScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VexScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF430D1810610100C95B01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEAF430F1810610100C95B01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEAF43111810610100C95B01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEAF43151810610100C95B01 /* VexScorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VexScorer-Info.plist"; sourceTree = "<group>"; };
+		DEAF43171810610100C95B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEAF43191810610100C95B01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEAF431B1810610100C95B01 /* VexScorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VexScorer-Prefix.pch"; sourceTree = "<group>"; };
+		DEAF431C1810610100C95B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEAF431D1810610100C95B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEAF43281810610100C95B01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEAF432E1810610100C95B01 /* VexScorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VexScorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF432F1810610100C95B01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DEAF43371810610100C95B01 /* VexScorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VexScorerTests-Info.plist"; sourceTree = "<group>"; };
+		DEAF43391810610100C95B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEAF433B1810610100C95B01 /* VexScorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VexScorerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEAF43071810610100C95B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF43101810610100C95B01 /* CoreGraphics.framework in Frameworks */,
+				DEAF43121810610100C95B01 /* UIKit.framework in Frameworks */,
+				DEAF430E1810610100C95B01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF432B1810610100C95B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF43301810610100C95B01 /* XCTest.framework in Frameworks */,
+				DEAF43321810610100C95B01 /* UIKit.framework in Frameworks */,
+				DEAF43311810610100C95B01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEAF43011810610100C95B01 = {
+			isa = PBXGroup;
+			children = (
+				DEAF43131810610100C95B01 /* VexScorer */,
+				DEAF43351810610100C95B01 /* VexScorerTests */,
+				DEAF430C1810610100C95B01 /* Frameworks */,
+				DEAF430B1810610100C95B01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEAF430B1810610100C95B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF430A1810610100C95B01 /* VexScorer.app */,
+				DEAF432E1810610100C95B01 /* VexScorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEAF430C1810610100C95B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF430D1810610100C95B01 /* Foundation.framework */,
+				DEAF430F1810610100C95B01 /* CoreGraphics.framework */,
+				DEAF43111810610100C95B01 /* UIKit.framework */,
+				DEAF432F1810610100C95B01 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEAF43131810610100C95B01 /* VexScorer */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF43281810610100C95B01 /* Images.xcassets */,
+				DEAF431C1810610100C95B01 /* AppDelegate.h */,
+				DEAF431D1810610100C95B01 /* AppDelegate.m */,
+				DE7794401816BF2E00AA85C2 /* VSScoringViewController.h */,
+				DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */,
+				DE7794431816C08E00AA85C2 /* VSMatchesViewController.h */,
+				DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */,
+				DE639D8E18197FD0000AD7CC /* VSMatchCell.h */,
+				DE639D8F18197FD0000AD7CC /* VSMatchCell.m */,
+				DEAF43141810610100C95B01 /* Supporting Files */,
+			);
+			path = VexScorer;
+			sourceTree = "<group>";
+		};
+		DEAF43141810610100C95B01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF43151810610100C95B01 /* VexScorer-Info.plist */,
+				DEAF43161810610100C95B01 /* InfoPlist.strings */,
+				DEAF43191810610100C95B01 /* main.m */,
+				DEAF431B1810610100C95B01 /* VexScorer-Prefix.pch */,
+				DE77944D1816C39F00AA85C2 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEAF43351810610100C95B01 /* VexScorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF433B1810610100C95B01 /* VexScorerTests.m */,
+				DEAF43361810610100C95B01 /* Supporting Files */,
+			);
+			path = VexScorerTests;
+			sourceTree = "<group>";
+		};
+		DEAF43361810610100C95B01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF43371810610100C95B01 /* VexScorerTests-Info.plist */,
+				DEAF43381810610100C95B01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEAF43091810610100C95B01 /* VexScorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAF433F1810610100C95B01 /* Build configuration list for PBXNativeTarget "VexScorer" */;
+			buildPhases = (
+				DEAF43061810610100C95B01 /* Sources */,
+				DEAF43071810610100C95B01 /* Frameworks */,
+				DEAF43081810610100C95B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VexScorer;
+			productName = VexScorer;
+			productReference = DEAF430A1810610100C95B01 /* VexScorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEAF432D1810610100C95B01 /* VexScorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAF43421810610100C95B01 /* Build configuration list for PBXNativeTarget "VexScorerTests" */;
+			buildPhases = (
+				DEAF432A1810610100C95B01 /* Sources */,
+				DEAF432B1810610100C95B01 /* Frameworks */,
+				DEAF432C1810610100C95B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEAF43341810610100C95B01 /* PBXTargetDependency */,
+			);
+			name = VexScorerTests;
+			productName = VexScorerTests;
+			productReference = DEAF432E1810610100C95B01 /* VexScorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEAF43021810610100C95B01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "RND Consulting";
+				TargetAttributes = {
+					DEAF432D1810610100C95B01 = {
+						TestTargetID = DEAF43091810610100C95B01;
+					};
+				};
+			};
+			buildConfigurationList = DEAF43051810610100C95B01 /* Build configuration list for PBXProject "VexScorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEAF43011810610100C95B01;
+			productRefGroup = DEAF430B1810610100C95B01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEAF43091810610100C95B01 /* VexScorer */,
+				DEAF432D1810610100C95B01 /* VexScorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEAF43081810610100C95B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF43291810610100C95B01 /* Images.xcassets in Resources */,
+				DE77944E1816C39F00AA85C2 /* Localizable.strings in Resources */,
+				DEAF43181810610100C95B01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF432C1810610100C95B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF433A1810610100C95B01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEAF43061810610100C95B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF431E1810610100C95B01 /* AppDelegate.m in Sources */,
+				DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */,
+				DEAF431A1810610100C95B01 /* main.m in Sources */,
+				DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */,
+				DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF432A1810610100C95B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF433C1810610100C95B01 /* VexScorerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEAF43341810610100C95B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEAF43091810610100C95B01 /* VexScorer */;
+			targetProxy = DEAF43331810610100C95B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEAF43161810610100C95B01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEAF43171810610100C95B01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DEAF43381810610100C95B01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEAF43391810610100C95B01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEAF433D1810610100C95B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DEAF433E1810610100C95B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEAF43401810610100C95B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
+				INFOPLIST_FILE = "VexScorer/VexScorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DEAF43411810610100C95B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
+				INFOPLIST_FILE = "VexScorer/VexScorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DEAF43431810610100C95B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VexScorer.app/VexScorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VexScorerTests/VexScorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DEAF43441810610100C95B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VexScorer.app/VexScorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
+				INFOPLIST_FILE = "VexScorerTests/VexScorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEAF43051810610100C95B01 /* Build configuration list for PBXProject "VexScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF433D1810610100C95B01 /* Debug */,
+				DEAF433E1810610100C95B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAF433F1810610100C95B01 /* Build configuration list for PBXNativeTarget "VexScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF43401810610100C95B01 /* Debug */,
+				DEAF43411810610100C95B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAF43421810610100C95B01 /* Build configuration list for PBXNativeTarget "VexScorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF43431810610100C95B01 /* Debug */,
+				DEAF43441810610100C95B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEAF43021810610100C95B01 /* Project object */;
+}
