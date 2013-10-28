@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE52522F181EB48B00EBD6A5 /* VexScorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */; };
 		DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE639D8F18197FD0000AD7CC /* VSMatchCell.m */; };
 		DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */; };
 		DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */; };
@@ -23,6 +24,7 @@
 		DEAF43321810610100C95B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF43111810610100C95B01 /* UIKit.framework */; };
 		DEAF433A1810610100C95B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEAF43381810610100C95B01 /* InfoPlist.strings */; };
 		DEAF433C1810610100C95B01 /* VexScorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF433B1810610100C95B01 /* VexScorerTests.m */; };
+		DEF3F921181C314F00733125 /* VSScoringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF3F920181C314F00733125 /* VSScoringView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE52522E181EB48B00EBD6A5 /* VexScorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VexScorer.xcdatamodel; sourceTree = "<group>"; };
 		DE639D8E18197FD0000AD7CC /* VSMatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchCell.h; path = Classes/VSMatchCell.h; sourceTree = "<group>"; };
 		DE639D8F18197FD0000AD7CC /* VSMatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchCell.m; path = Classes/VSMatchCell.m; sourceTree = "<group>"; };
 		DE7794401816BF2E00AA85C2 /* VSScoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSScoringViewController.h; path = Classes/VSScoringViewController.h; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		DEAF43371810610100C95B01 /* VexScorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VexScorerTests-Info.plist"; sourceTree = "<group>"; };
 		DEAF43391810610100C95B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEAF433B1810610100C95B01 /* VexScorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VexScorerTests.m; sourceTree = "<group>"; };
+		DEF3F920181C314F00733125 /* VSScoringView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSScoringView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +122,13 @@
 		DEAF43131810610100C95B01 /* VexScorer */ = {
 			isa = PBXGroup;
 			children = (
+				DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */,
 				DEAF43281810610100C95B01 /* Images.xcassets */,
 				DEAF431C1810610100C95B01 /* AppDelegate.h */,
 				DEAF431D1810610100C95B01 /* AppDelegate.m */,
 				DE7794401816BF2E00AA85C2 /* VSScoringViewController.h */,
 				DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */,
+				DEF3F920181C314F00733125 /* VSScoringView.xib */,
 				DE7794431816C08E00AA85C2 /* VSMatchesViewController.h */,
 				DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */,
 				DE639D8E18197FD0000AD7CC /* VSMatchCell.h */,
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAF43291810610100C95B01 /* Images.xcassets in Resources */,
+				DEF3F921181C314F00733125 /* VSScoringView.xib in Resources */,
 				DE77944E1816C39F00AA85C2 /* Localizable.strings in Resources */,
 				DEAF43181810610100C95B01 /* InfoPlist.strings in Resources */,
 			);
@@ -264,6 +271,7 @@
 				DEAF431A1810610100C95B01 /* main.m in Sources */,
 				DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */,
 				DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */,
+				DE52522F181EB48B00EBD6A5 /* VexScorer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +486,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE52522E181EB48B00EBD6A5 /* VexScorer.xcdatamodel */,
+			);
+			currentVersion = DE52522E181EB48B00EBD6A5 /* VexScorer.xcdatamodel */;
+			path = VexScorer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DEAF43021810610100C95B01 /* Project object */;
 }

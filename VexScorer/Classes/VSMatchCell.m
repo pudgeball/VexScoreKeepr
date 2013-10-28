@@ -143,4 +143,12 @@
 	self.blueScoreLabel.text = [blueScore stringValue];
 }
 
+- (void)setSelected:(BOOL)selected {
+	CGColorRef ref = (selected) ? [UIColor colorWithHue:0.326 saturation:0.549 brightness:0.957 alpha:1.000].CGColor : [UIColor blackColor].CGColor;
+	CGFloat borderWidth = (selected) ? 4.0 : 2.0;
+	
+	self.layer.borderColor = ref;
+	self.layer.borderWidth = borderWidth;
+}
+
 @end

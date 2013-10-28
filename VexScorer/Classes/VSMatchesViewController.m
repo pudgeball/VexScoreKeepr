@@ -28,7 +28,6 @@ static NSString * kCellID = @"MatchCellID";
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -53,8 +52,14 @@ static NSString * kCellID = @"MatchCellID";
 														   style:UIBarButtonItemStylePlain
 														  target:self
 														  action:@selector(pressedAddButton:)];
-	self.clearAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MATCHES_CLEAR_TITLE", nil) style:UIBarButtonItemStylePlain target:self action:@selector(pressedClearButton:)];
-	self.deleteButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MATCHES_DELETE_TITLE", nil) style:UIBarButtonItemStylePlain target:self action:@selector(pressedDeleteButton:)];
+	self.clearAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MATCHES_CLEAR_TITLE", nil)
+														   style:UIBarButtonItemStylePlain
+														  target:self
+														  action:@selector(pressedClearButton:)];
+	self.deleteButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MATCHES_DELETE_TITLE", nil)
+														 style:UIBarButtonItemStylePlain
+														target:self
+														action:@selector(pressedDeleteButton:)];
 	
 	self.navigationItem.leftBarButtonItem = self.editButton;
 	self.navigationItem.rightBarButtonItem = self.addMatchButton;
@@ -70,7 +75,7 @@ static NSString * kCellID = @"MatchCellID";
 	if (self.editing) {
 		self.navigationItem.rightBarButtonItems = @[self.deleteButton, self.clearAllButton];
 	} else {
-		self.navigationItem.rightBarButtonItem = self.addMatchButton;
+		self.navigationItem.rightBarButtonItems = @[self.addMatchButton];
 	}
 }
 
@@ -108,7 +113,7 @@ static NSString * kCellID = @"MatchCellID";
 
 #pragma mark – UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return CGSizeMake(400, 150);
+	return CGSizeMake(200, 150);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {

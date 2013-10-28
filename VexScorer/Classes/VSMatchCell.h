@@ -15,4 +15,6 @@
 - (void)setRedScore:(NSNumber *)redScore;
 - (void)setBlueScore:(NSNumber *)blueScore;
 
+- (void)setSelected:(BOOL)selected;
+
 @end

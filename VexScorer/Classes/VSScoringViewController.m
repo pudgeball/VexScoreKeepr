@@ -23,10 +23,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	
+	[self.controlsView addSubview:self.autonomousView];
+	[self.controlsView addSubview:self.teleopView];
+	self.teleopView.frame = CGRectMake(0, 488, 1024, 488);
+	self.controlsView.contentSize = CGSizeMake(1024, 488 * 2);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (IBAction)pressedModeChange:(id)sender {
+	if (self.currentMode == Autonomous) {
+		
+	} else {
+		
+	}
+}
+
+- (void)resetView {
+	
 }
 
 @end

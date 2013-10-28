@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	
-	VSScoringViewController *scoringViewController = [VSScoringViewController new];
+	VSScoringViewController *scoringViewController = [[VSScoringViewController alloc] initWithNibName:@"VSScoringView" bundle:nil];
 	VSMatchesViewController *matchesViewController = [VSMatchesViewController new];
 	
 	UINavigationController *matchesNavController = [[UINavigationController alloc] initWithRootViewController:matchesViewController];
@@ -25,7 +25,7 @@
 	matchesNavController.tabBarItem.title = NSLocalizedString(@"MATCHES_TAB_TITLE", nil);
 	
 	self.tabBarController = [[UITabBarController alloc] init];
-	self.tabBarController.viewControllers = @[matchesNavController, scoringViewController];
+	self.tabBarController.viewControllers = @[scoringViewController, matchesNavController];
 	self.window.rootViewController = self.tabBarController;
 	[self.window makeKeyAndVisible];
     return YES;

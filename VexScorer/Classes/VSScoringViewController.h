@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, VSModes) {
+	Teleop,
+	Autonomous
+};
+
 @interface VSScoringViewController : UIViewController
 
+@property (nonatomic) VSModes currentMode;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *controlsView;
+@property (weak, nonatomic) IBOutlet UIView *autonomousView;
+@property (weak, nonatomic) IBOutlet UIView *teleopView;
+
+- (IBAction)pressedModeChange:(id)sender;
 @end
