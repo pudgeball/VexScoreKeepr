@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+	self.currentMode = Autonomous;
 	
 	[self.controlsView addSubview:self.autonomousView];
 	[self.controlsView addSubview:self.teleopView];
@@ -35,16 +35,57 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)pressedModeChange:(id)sender {
+- (void)pressedModeChange:(id)sender {
 	if (self.currentMode == Autonomous) {
-		
+		[self.controlsView setContentOffset:CGPointMake(0, 488) animated:YES];
 	} else {
 		
 	}
 }
 
+- (void)updateAutonomousScore:(UIButton *)sender {
+	NSInteger points = (sender.tag % 2 == 0) ? -1 : 1;
+	if (sender.tag == 0 || sender.tag == 1) {
+		self.redAutonomousScoreLabel.text = [@(self.redAutonomousScoreLabel.text.integerValue + points) stringValue];
+	} else if (sender.tag == 2 || sender.tag == 3) {
+		self.blueAutonomousScoreLabel.text = [@(self.blueAutonomousScoreLabel.text.integerValue + points) stringValue];
+	}
+}
+
+- (IBAction)updateCornerScore:(UIButton *)sender {
+	NSInteger points = (sender.tag % 2 == 0) ? -1 : 1;
+	if (sender.tag == 0 || sender.tag == 1) {
+		self.redAutonomousScoreLabel.text = [@(self.redAutonomousScoreLabel.text.integerValue + points) stringValue];
+	} else if (sender.tag == 2 || sender.tag == 3) {
+		self.blueAutonomousScoreLabel.text = [@(self.blueAutonomousScoreLabel.text.integerValue + points) stringValue];
+	}
+}
+
+- (IBAction)updateGoalScore:(UIButton *)sender {
+	NSInteger points = (sender.tag % 2 == 0) ? -1 : 1;
+	if (sender.tag == 0 || sender.tag == 1) {
+		self.redAutonomousScoreLabel.text = [@(self.redAutonomousScoreLabel.text.integerValue + points) stringValue];
+	} else if (sender.tag == 2 || sender.tag == 3) {
+		self.blueAutonomousScoreLabel.text = [@(self.blueAutonomousScoreLabel.text.integerValue + points) stringValue];
+	}
+}
+
+- (IBAction)updateFinaleScore:(UIButton *)sender {
+	NSInteger points = (sender.tag % 2 == 0) ? -1 : 1;
+	if (sender.tag == 0 || sender.tag == 1) {
+		self.redAutonomousScoreLabel.text = [@(self.redAutonomousScoreLabel.text.integerValue + points) stringValue];
+	} else if (sender.tag == 2 || sender.tag == 3) {
+		self.blueAutonomousScoreLabel.text = [@(self.blueAutonomousScoreLabel.text.integerValue + points) stringValue];
+	}
+}
+
 - (void)resetView {
 	
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+	NSInteger page = (scrollView.contentOffset.y / scrollView.frame.size.height);
+	self.currentMode = page;
 }
 
 @end
