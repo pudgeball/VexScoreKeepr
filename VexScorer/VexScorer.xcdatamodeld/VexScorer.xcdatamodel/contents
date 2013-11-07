@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Match" syncable="YES">
+    <entity name="Match" representedClassName="Match" syncable="YES">
         <attribute name="number" optional="YES" attributeType="Integer 32" syncable="YES"/>
         <relationship name="blueScore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Score" inverseName="blueMatch" inverseEntity="Score" syncable="YES"/>
         <relationship name="blueTeams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="blueMatch" inverseEntity="Team" syncable="YES"/>
         <relationship name="redScore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Score" inverseName="redMatch" inverseEntity="Score" syncable="YES"/>
         <relationship name="redTeams" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="redMatch" inverseEntity="Team" syncable="YES"/>
     </entity>
-    <entity name="Score" syncable="YES">
+    <entity name="Score" representedClassName="Score" syncable="YES">
         <attribute name="autonomous" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="corner" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="finale" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="goal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="blueMatch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match" inverseName="blueScore" inverseEntity="Match" syncable="YES"/>
         <relationship name="redMatch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match" inverseName="redScore" inverseEntity="Match" syncable="YES"/>
     </entity>
-    <entity name="Team" syncable="YES">
+    <entity name="Team" representedClassName="Team" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 32" syncable="YES"/>
         <relationship name="blueMatch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match" inverseName="blueTeams" inverseEntity="Match" syncable="YES"/>
         <relationship name="redMatch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match" inverseName="redTeams" inverseEntity="Match" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Match" positionX="160" positionY="192" width="128" height="118"/>
-        <element name="Team" positionX="367" positionY="192" width="128" height="103"/>
-        <element name="Score" positionX="-37" positionY="87" width="128" height="103"/>
+        <element name="Match" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Score" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Team" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -13,30 +13,37 @@ typedef NS_ENUM(NSInteger, VSModes) {
 	Teleop
 };
 
+@class Match, Score;
+
 @interface VSScoringViewController : UIViewController <UIScrollViewDelegate>
 
 @property (nonatomic) VSModes currentMode;
 
+@property (strong, nonatomic) Match *currentMatch;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *controlsView;
+@property (weak, nonatomic) IBOutlet UIButton *modeButton;
+@property (weak, nonatomic) IBOutlet UILabel *matchLabel;
+@property (weak, nonatomic) IBOutlet UILabel *modeLabel;
+
 @property (weak, nonatomic) IBOutlet UIView *autonomousView;
 @property (weak, nonatomic) IBOutlet UILabel *redAutonomousScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blueAutonomousScoreLabel;
-
 
 @property (weak, nonatomic) IBOutlet UIView *teleopView;
 @property (weak, nonatomic) IBOutlet UILabel *redCornerScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *redGoalScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *redFinaleScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *blueCornerScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *blueGoalScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *blueFinaleScoreLabel;
 
-
-
-
-
-- (IBAction)pressedModeChange:(id)sender;
 
 - (IBAction)updateAutonomousScore:(UIButton *)sender;
 - (IBAction)updateCornerScore:(UIButton *)sender;
 - (IBAction)updateGoalScore:(UIButton *)sender;
 - (IBAction)updateFinaleScore:(UIButton *)sender;
+
+- (IBAction)pressedModeChange:(id)sender;
 
 @end

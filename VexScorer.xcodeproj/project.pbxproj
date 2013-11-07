@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088A347AFB184A2EB32A8559 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76503AF44315491180E109B5 /* libPods.a */; };
+		DE2A01B9182B27C7004FAE32 /* VSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */; };
 		DE52522F181EB48B00EBD6A5 /* VexScorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */; };
 		DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE639D8F18197FD0000AD7CC /* VSMatchCell.m */; };
 		DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */; };
 		DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */; };
 		DE77944E1816C39F00AA85C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE77944D1816C39F00AA85C2 /* Localizable.strings */; };
+		DE7F71CD18217DB8009AC122 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71C918217DB8009AC122 /* CoreDataManager.m */; };
+		DE7F71CE18217DB8009AC122 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71CB18217DB8009AC122 /* NSManagedObject+ActiveRecord.m */; };
+		DE7F71D018217E1C009AC122 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7F71CF18217E1C009AC122 /* CoreData.framework */; };
+		DE7F71DE1821814F009AC122 /* _Match.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71D31821814F009AC122 /* _Match.m */; };
+		DE7F71DF1821814F009AC122 /* _Score.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71D51821814F009AC122 /* _Score.m */; };
+		DE7F71E01821814F009AC122 /* _Team.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71D71821814F009AC122 /* _Team.m */; };
+		DE7F71E11821814F009AC122 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71D91821814F009AC122 /* Match.m */; };
+		DE7F71E21821814F009AC122 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71DB1821814F009AC122 /* Score.m */; };
+		DE7F71E31821814F009AC122 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7F71DD1821814F009AC122 /* Team.m */; };
+		DEA2D79018204113007A7113 /* VSMatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA2D78F18204113007A7113 /* VSMatchListViewController.m */; };
 		DEAF430E1810610100C95B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF430D1810610100C95B01 /* Foundation.framework */; };
 		DEAF43101810610100C95B01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF430F1810610100C95B01 /* CoreGraphics.framework */; };
 		DEAF43121810610100C95B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF43111810610100C95B01 /* UIKit.framework */; };
@@ -38,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289E7AA3928F416DB77A7887 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		76503AF44315491180E109B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2A01B7182B27C7004FAE32 /* VSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSSettingsViewController.h; path = Classes/VSSettingsViewController.h; sourceTree = "<group>"; };
+		DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSSettingsViewController.m; path = Classes/VSSettingsViewController.m; sourceTree = "<group>"; };
 		DE52522E181EB48B00EBD6A5 /* VexScorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VexScorer.xcdatamodel; sourceTree = "<group>"; };
 		DE639D8E18197FD0000AD7CC /* VSMatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchCell.h; path = Classes/VSMatchCell.h; sourceTree = "<group>"; };
 		DE639D8F18197FD0000AD7CC /* VSMatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchCell.m; path = Classes/VSMatchCell.m; sourceTree = "<group>"; };
@@ -46,6 +62,26 @@
 		DE7794431816C08E00AA85C2 /* VSMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchesViewController.h; path = Classes/VSMatchesViewController.h; sourceTree = "<group>"; };
 		DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchesViewController.m; path = Classes/VSMatchesViewController.m; sourceTree = "<group>"; };
 		DE77944D1816C39F00AA85C2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DE7F71C818217DB8009AC122 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		DE7F71C918217DB8009AC122 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		DE7F71CA18217DB8009AC122 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		DE7F71CB18217DB8009AC122 /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		DE7F71CC18217DB8009AC122 /* ObjectiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveRecord.h; sourceTree = "<group>"; };
+		DE7F71CF18217E1C009AC122 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DE7F71D21821814F009AC122 /* _Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Match.h; sourceTree = "<group>"; };
+		DE7F71D31821814F009AC122 /* _Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Match.m; sourceTree = "<group>"; };
+		DE7F71D41821814F009AC122 /* _Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Score.h; sourceTree = "<group>"; };
+		DE7F71D51821814F009AC122 /* _Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Score.m; sourceTree = "<group>"; };
+		DE7F71D61821814F009AC122 /* _Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Team.h; sourceTree = "<group>"; };
+		DE7F71D71821814F009AC122 /* _Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Team.m; sourceTree = "<group>"; };
+		DE7F71D81821814F009AC122 /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		DE7F71D91821814F009AC122 /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		DE7F71DA1821814F009AC122 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		DE7F71DB1821814F009AC122 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		DE7F71DC1821814F009AC122 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		DE7F71DD1821814F009AC122 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		DEA2D78E18204113007A7113 /* VSMatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchListViewController.h; path = Classes/VSMatchListViewController.h; sourceTree = "<group>"; };
+		DEA2D78F18204113007A7113 /* VSMatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchListViewController.m; path = Classes/VSMatchListViewController.m; sourceTree = "<group>"; };
 		DEAF430A1810610100C95B01 /* VexScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VexScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAF430D1810610100C95B01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEAF430F1810610100C95B01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,9 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7F71D018217E1C009AC122 /* CoreData.framework in Frameworks */,
 				DEAF43101810610100C95B01 /* CoreGraphics.framework in Frameworks */,
 				DEAF43121810610100C95B01 /* UIKit.framework in Frameworks */,
 				DEAF430E1810610100C95B01 /* Foundation.framework in Frameworks */,
+				088A347AFB184A2EB32A8559 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +127,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE7F71C718217DB8009AC122 /* Objective-Record */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F71C818217DB8009AC122 /* CoreDataManager.h */,
+				DE7F71C918217DB8009AC122 /* CoreDataManager.m */,
+				DE7F71CA18217DB8009AC122 /* NSManagedObject+ActiveRecord.h */,
+				DE7F71CB18217DB8009AC122 /* NSManagedObject+ActiveRecord.m */,
+				DE7F71CC18217DB8009AC122 /* ObjectiveRecord.h */,
+			);
+			path = "Objective-Record";
+			sourceTree = "<group>";
+		};
+		DE7F71D11821814F009AC122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F71E41827EF7A009AC122 /* Machine Files */,
+				DE7F71D81821814F009AC122 /* Match.h */,
+				DE7F71D91821814F009AC122 /* Match.m */,
+				DE7F71DA1821814F009AC122 /* Score.h */,
+				DE7F71DB1821814F009AC122 /* Score.m */,
+				DE7F71DC1821814F009AC122 /* Team.h */,
+				DE7F71DD1821814F009AC122 /* Team.m */,
+			);
+			name = Model;
+			path = Classes/Model;
+			sourceTree = "<group>";
+		};
+		DE7F71E41827EF7A009AC122 /* Machine Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F71D21821814F009AC122 /* _Match.h */,
+				DE7F71D31821814F009AC122 /* _Match.m */,
+				DE7F71D41821814F009AC122 /* _Score.h */,
+				DE7F71D51821814F009AC122 /* _Score.m */,
+				DE7F71D61821814F009AC122 /* _Team.h */,
+				DE7F71D71821814F009AC122 /* _Team.m */,
+			);
+			name = "Machine Files";
+			sourceTree = "<group>";
+		};
+		DEA2D791182172F1007A7113 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F71C718217DB8009AC122 /* Objective-Record */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 		DEAF43011810610100C95B01 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +182,7 @@
 				DEAF43351810610100C95B01 /* VexScorerTests */,
 				DEAF430C1810610100C95B01 /* Frameworks */,
 				DEAF430B1810610100C95B01 /* Products */,
+				289E7AA3928F416DB77A7887 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,10 +198,12 @@
 		DEAF430C1810610100C95B01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE7F71CF18217E1C009AC122 /* CoreData.framework */,
 				DEAF430D1810610100C95B01 /* Foundation.framework */,
 				DEAF430F1810610100C95B01 /* CoreGraphics.framework */,
 				DEAF43111810610100C95B01 /* UIKit.framework */,
 				DEAF432F1810610100C95B01 /* XCTest.framework */,
+				76503AF44315491180E109B5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */,
+				DE7F71D11821814F009AC122 /* Model */,
 				DEAF43281810610100C95B01 /* Images.xcassets */,
 				DEAF431C1810610100C95B01 /* AppDelegate.h */,
 				DEAF431D1810610100C95B01 /* AppDelegate.m */,
@@ -133,6 +223,11 @@
 				DE7794441816C08E00AA85C2 /* VSMatchesViewController.m */,
 				DE639D8E18197FD0000AD7CC /* VSMatchCell.h */,
 				DE639D8F18197FD0000AD7CC /* VSMatchCell.m */,
+				DEA2D78E18204113007A7113 /* VSMatchListViewController.h */,
+				DEA2D78F18204113007A7113 /* VSMatchListViewController.m */,
+				DE2A01B7182B27C7004FAE32 /* VSSettingsViewController.h */,
+				DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */,
+				DEA2D791182172F1007A7113 /* Vendor */,
 				DEAF43141810610100C95B01 /* Supporting Files */,
 			);
 			path = VexScorer;
@@ -175,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEAF433F1810610100C95B01 /* Build configuration list for PBXNativeTarget "VexScorer" */;
 			buildPhases = (
+				57E14EFA4F2347E0ABBC7426 /* Check Pods Manifest.lock */,
 				DEAF43061810610100C95B01 /* Sources */,
 				DEAF43071810610100C95B01 /* Frameworks */,
 				DEAF43081810610100C95B01 /* Resources */,
+				1470A8CCA048475285B95865 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,16 +358,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1470A8CCA048475285B95865 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57E14EFA4F2347E0ABBC7426 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEAF43061810610100C95B01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7F71E01821814F009AC122 /* _Team.m in Sources */,
+				DE7F71E11821814F009AC122 /* Match.m in Sources */,
 				DEAF431E1810610100C95B01 /* AppDelegate.m in Sources */,
+				DE7F71DF1821814F009AC122 /* _Score.m in Sources */,
+				DE7F71E21821814F009AC122 /* Score.m in Sources */,
+				DE7F71DE1821814F009AC122 /* _Match.m in Sources */,
 				DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */,
+				DE7F71CD18217DB8009AC122 /* CoreDataManager.m in Sources */,
 				DEAF431A1810610100C95B01 /* main.m in Sources */,
 				DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */,
+				DE7F71E31821814F009AC122 /* Team.m in Sources */,
+				DE7F71CE18217DB8009AC122 /* NSManagedObject+ActiveRecord.m in Sources */,
+				DEA2D79018204113007A7113 /* VSMatchListViewController.m in Sources */,
 				DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */,
+				DE2A01B9182B27C7004FAE32 /* VSSettingsViewController.m in Sources */,
 				DE52522F181EB48B00EBD6A5 /* VexScorer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +470,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -370,6 +511,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -389,6 +531,7 @@
 		};
 		DEAF43401810610100C95B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289E7AA3928F416DB77A7887 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +545,7 @@
 		};
 		DEAF43411810610100C95B01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289E7AA3928F416DB77A7887 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

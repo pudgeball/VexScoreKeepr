@@ -10,6 +10,7 @@
 
 #import "VSScoringViewController.h"
 #import "VSMatchesViewController.h"
+#import "VSSettingsViewController.h"
 
 @implementation AppDelegate
 
@@ -18,14 +19,16 @@
 	
 	VSScoringViewController *scoringViewController = [[VSScoringViewController alloc] initWithNibName:@"VSScoringView" bundle:nil];
 	VSMatchesViewController *matchesViewController = [VSMatchesViewController new];
+	VSSettingsViewController *settingsViewController = [[VSSettingsViewController alloc] initWithStyle:UITableViewStyleGrouped];
 	
-	UINavigationController *matchesNavController = [[UINavigationController alloc] initWithRootViewController:matchesViewController];
+	UINavigationController *matchesNavController = [[UINavigationController alloc] initWithRootViewController:matchesViewController],
+	*settingsNavController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
 	
 	scoringViewController.tabBarItem.title = NSLocalizedString(@"SCORING_TAB_TITLE", nil);
 	matchesNavController.tabBarItem.title = NSLocalizedString(@"MATCHES_TAB_TITLE", nil);
 	
 	self.tabBarController = [[UITabBarController alloc] init];
-	self.tabBarController.viewControllers = @[scoringViewController, matchesNavController];
+	self.tabBarController.viewControllers = @[scoringViewController, matchesNavController, settingsNavController];
 	self.window.rootViewController = self.tabBarController;
 	[self.window makeKeyAndVisible];
     return YES;

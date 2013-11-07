@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VSMatchesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@class Match, Score;
+
+@interface VSMatchesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end
