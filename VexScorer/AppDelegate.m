@@ -26,6 +26,7 @@
 	
 	scoringViewController.tabBarItem.title = NSLocalizedString(@"SCORING_TAB_TITLE", nil);
 	matchesNavController.tabBarItem.title = NSLocalizedString(@"MATCHES_TAB_TITLE", nil);
+	settingsNavController.tabBarItem.title = @"Settings";
 	
 	self.tabBarController = [[UITabBarController alloc] init];
 	self.tabBarController.viewControllers = @[scoringViewController, matchesNavController, settingsNavController];

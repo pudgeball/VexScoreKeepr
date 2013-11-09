@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		088A347AFB184A2EB32A8559 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76503AF44315491180E109B5 /* libPods.a */; };
 		DE2A01B9182B27C7004FAE32 /* VSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */; };
+		DE444694182D2C1D000631B7 /* VSBatchCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE444693182D2C1D000631B7 /* VSBatchCreationViewController.m */; };
+		DE444696182D2C36000631B7 /* VSBatchCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE444695182D2C36000631B7 /* VSBatchCreationView.xib */; };
 		DE52522F181EB48B00EBD6A5 /* VexScorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE52522D181EB48B00EBD6A5 /* VexScorer.xcdatamodeld */; };
 		DE639D9018197FD0000AD7CC /* VSMatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE639D8F18197FD0000AD7CC /* VSMatchCell.m */; };
 		DE7794421816BF2E00AA85C2 /* VSScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7794411816BF2E00AA85C2 /* VSScoringViewController.m */; };
@@ -54,6 +56,9 @@
 		76503AF44315491180E109B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2A01B7182B27C7004FAE32 /* VSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSSettingsViewController.h; path = Classes/VSSettingsViewController.h; sourceTree = "<group>"; };
 		DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSSettingsViewController.m; path = Classes/VSSettingsViewController.m; sourceTree = "<group>"; };
+		DE444692182D2C1D000631B7 /* VSBatchCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSBatchCreationViewController.h; path = Classes/VSBatchCreationViewController.h; sourceTree = "<group>"; };
+		DE444693182D2C1D000631B7 /* VSBatchCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSBatchCreationViewController.m; path = Classes/VSBatchCreationViewController.m; sourceTree = "<group>"; };
+		DE444695182D2C36000631B7 /* VSBatchCreationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VSBatchCreationView.xib; path = Classes/VSBatchCreationView.xib; sourceTree = "<group>"; };
 		DE52522E181EB48B00EBD6A5 /* VexScorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VexScorer.xcdatamodel; sourceTree = "<group>"; };
 		DE639D8E18197FD0000AD7CC /* VSMatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSMatchCell.h; path = Classes/VSMatchCell.h; sourceTree = "<group>"; };
 		DE639D8F18197FD0000AD7CC /* VSMatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSMatchCell.m; path = Classes/VSMatchCell.m; sourceTree = "<group>"; };
@@ -227,6 +232,9 @@
 				DEA2D78F18204113007A7113 /* VSMatchListViewController.m */,
 				DE2A01B7182B27C7004FAE32 /* VSSettingsViewController.h */,
 				DE2A01B8182B27C7004FAE32 /* VSSettingsViewController.m */,
+				DE444692182D2C1D000631B7 /* VSBatchCreationViewController.h */,
+				DE444693182D2C1D000631B7 /* VSBatchCreationViewController.m */,
+				DE444695182D2C36000631B7 /* VSBatchCreationView.xib */,
 				DEA2D791182172F1007A7113 /* Vendor */,
 				DEAF43141810610100C95B01 /* Supporting Files */,
 			);
@@ -312,6 +320,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "RND Consulting";
 				TargetAttributes = {
+					DEAF43091810610100C95B01 = {
+						DevelopmentTeam = Y32HLU7W79;
+					};
 					DEAF432D1810610100C95B01 = {
 						TestTargetID = DEAF43091810610100C95B01;
 					};
@@ -343,6 +354,7 @@
 			files = (
 				DEAF43291810610100C95B01 /* Images.xcassets in Resources */,
 				DEF3F921181C314F00733125 /* VSScoringView.xib in Resources */,
+				DE444696182D2C36000631B7 /* VSBatchCreationView.xib in Resources */,
 				DE77944E1816C39F00AA85C2 /* Localizable.strings in Resources */,
 				DEAF43181810610100C95B01 /* InfoPlist.strings in Resources */,
 			);
@@ -401,6 +413,7 @@
 				DEAF431E1810610100C95B01 /* AppDelegate.m in Sources */,
 				DE7F71DF1821814F009AC122 /* _Score.m in Sources */,
 				DE7F71E21821814F009AC122 /* Score.m in Sources */,
+				DE444694182D2C1D000631B7 /* VSBatchCreationViewController.m in Sources */,
 				DE7F71DE1821814F009AC122 /* _Match.m in Sources */,
 				DE7794451816C08E00AA85C2 /* VSMatchesViewController.m in Sources */,
 				DE7F71CD18217DB8009AC122 /* CoreDataManager.m in Sources */,
@@ -535,10 +548,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
 				INFOPLIST_FILE = "VexScorer/VexScorer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -549,10 +565,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VexScorer/VexScorer-Prefix.pch";
 				INFOPLIST_FILE = "VexScorer/VexScorer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

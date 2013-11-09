@@ -8,6 +8,8 @@
 
 #import "VSMatchListViewController.h"
 
+#import "VSScoringViewController.h"
+
 #import "Model/Match.h"
 
 static NSString * kCellIdentifier = @"VSMatchListCell";
@@ -145,6 +147,12 @@ static NSString * kCacheName = @"VSMatchListCache";
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView endUpdates];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	Match *match = [self.fetchedResultsController objectAtIndexPath:indexPath];
+	self.scoringViewController.currentMatch = match;
+	[self.scoringViewController.matchPickerPopover dismissPopoverAnimated:YES];
 }
 
 

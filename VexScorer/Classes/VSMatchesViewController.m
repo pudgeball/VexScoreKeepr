@@ -72,15 +72,20 @@ static NSString * kCacheName = @"VSMatchesCache";
 	
 	_objectChanges = [NSMutableArray array];
     _sectionChanges = [NSMutableArray array];
+	
+	self.navigationItem.leftBarButtonItem.enabled = NO;
+	self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
+	[self.collectionView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
 	[NSFetchedResultsController deleteCacheWithName:kCacheName];
+	_fetchedResultsController = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,7 +96,7 @@ static NSString * kCacheName = @"VSMatchesCache";
 	if (_fetchedResultsController) return _fetchedResultsController;
 	
 	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[Match entityName]];
-	request.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:NO] ];
+	request.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:YES] ];
 	
 	_fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
 																	managedObjectContext:[[CoreDataManager instance] managedObjectContext]

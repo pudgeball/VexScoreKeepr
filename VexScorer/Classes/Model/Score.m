@@ -1,5 +1,9 @@
 #import "Score.h"
 
+static NSInteger kAutonomousMod = 20;
+static NSInteger kCornerMod = 1;
+static NSInteger kGoalMod = 5;
+static NSInteger kFinaleMod = 20;
 
 @interface Score ()
 
@@ -11,7 +15,7 @@
 @implementation Score
 
 - (NSNumber *)finalScore {
-	return @(self.autonomousValue + self.goalValue + self.cornerValue + self.finaleValue);
+	return @((self.autonomousValue * kAutonomousMod) + (self.goalValue * kGoalMod) + (self.cornerValue * kCornerMod) + (self.finaleValue * kFinaleMod));
 }
 
 @end

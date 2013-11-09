@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, VSModes) {
-	Autonomous,
-	Teleop
+	VSModeAutonomous,
+	VSModeTeleop,
+	VSModeScore
 };
 
 @class Match, Score;
@@ -20,6 +21,9 @@ typedef NS_ENUM(NSInteger, VSModes) {
 @property (nonatomic) VSModes currentMode;
 
 @property (strong, nonatomic) Match *currentMatch;
+
+@property (strong, nonatomic) UIPopoverController *matchPickerPopover;
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *controlsView;
 @property (weak, nonatomic) IBOutlet UIButton *modeButton;
@@ -37,6 +41,10 @@ typedef NS_ENUM(NSInteger, VSModes) {
 @property (weak, nonatomic) IBOutlet UILabel *blueCornerScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blueGoalScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blueFinaleScoreLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *scoreView;
+@property (weak, nonatomic) IBOutlet UILabel *redScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *blueScoreLabel;
 
 
 - (IBAction)updateAutonomousScore:(UIButton *)sender;

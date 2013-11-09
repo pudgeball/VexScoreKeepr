@@ -8,6 +8,12 @@
 
 #import "VSSettingsViewController.h"
 
+#import "VSBatchCreationViewController.h"
+
+#import "Model/Match.h"
+
+static NSString *kCellIdentifier = @"VSSettingsCell";
+
 @interface VSSettingsViewController ()
 
 @end
@@ -23,12 +29,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	
+	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+	
+	self.title = @"Settings";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,25 +49,58 @@
 	NSInteger count = 0;
 	switch (section) {
 		case 0:
-			count = 1;
+			count = 2;
 			break;
 	}
 	return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-	
+	NSString *labelText = @"";
+	switch (indexPath.row) {
+		case 0:
+			labelText = @"Create Matches (Batch)";
+			break;
+		case 1:
+			labelText = @"Reset Data";
+			break;
+	}
+	cell.textLabel.text = labelText;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	NSString *title = @"";
+	switch (section) {
+		case 0:
+			title = @"Match Operations";
+			break;
+	}
+	return title;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0 && indexPath.row == 0) {
+		VSBatchCreationViewController *batchCreation = [[VSBatchCreationViewController alloc] initWithNibName:@"VSBatchCreationView" bundle:nil];
+		batchCreation.modalPresentationStyle = UIModalPresentationFormSheet;
+		[self presentViewController:batchCreation animated:YES completion:nil];
+	} else if (indexPath.section == 0 && indexPath.row == 1) {
+		NSArray *matches = [Match all];
+		for (Match *match in matches) {
+			[match delete];
+		}
+		[[CoreDataManager instance] saveContext];
+		
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done!" message:@"Matches have been deleted!" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil];
+		[alert show];
+	}
 	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
